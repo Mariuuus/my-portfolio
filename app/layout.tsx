@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Cantarell } from "next/font/google";
 import "./globals.css";
+import Link from 'next/link';
 
 const cantarell = Cantarell({
   weight: "400",
@@ -25,7 +26,7 @@ export default function RootLayout({
     >
       <body className="h-full font-(--font-cantarell) bg-blue-50">
         <nav className="text-center w-full bg-blue-200 mb-6">
-          <a href="/">About</a> · <a href="/projects">Projects</a> · <a href="/research">Research</a> · <a href="/blog">Blog</a> · <a href="/resume">Résumé</a>
+          <Link href="/">About</Link> · <Link href="/projects">Projects</Link> · <Link href="/research">Research</Link> · <Link href="/blog">Blog</Link> · <Link href="/resume">Résumé</Link>
         </nav>
         {/* <hr/> */}
         <main className="flex flex-col items-center">
